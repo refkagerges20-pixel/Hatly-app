@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --hatly-navy: #0A192F;
+    --hatly-navy-soft: #132847;
+    --hatly-orange: #FF7B00;
+    --hatly-orange-hover: #E56E00;
+    --hatly-canvas: #F6F8FB;
+  }
+
+  html {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    direction: rtl;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    background-color: var(--hatly-canvas);
+    color: var(--hatly-navy);
+    overflow-x: hidden;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Custom Leaflet container styling for RTL & crisp mobile touch */
+.leaflet-container {
+  font-family: 'Cairo', system-ui, sans-serif !important;
+  z-index: 1;
+}

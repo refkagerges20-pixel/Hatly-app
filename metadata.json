@@ -1,0 +1,6 @@
+{
+  "name": "Hatly — هاتلي للتوصيل",
+  "description": "تطبيق هاتلي للعملاء لتوصيل الطلبات والمشتريات والأوردرات المخصوصة بسرعة وأمان في المنيا.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
